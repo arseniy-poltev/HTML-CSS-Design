@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dashboard - BinarFi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/desktop.css" rel="stylesheet">
+	<link href="css/mobile.css" rel="stylesheet">
+</head>
+<body id="dashboard-page">
+    <main>
+        <div class="left">
+            <nav>
+                <div id="dashboard-logo" class="start"><a href="javascript:void(0)"><img src="images/logo.png" alt="" /></a></div>
+                <div class="end">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div><img src="images/icon-18.png" alt="" /></div>
+                                <div><span>Dashboard</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div><img src="images/icon-19.png" alt="" /></div>
+                                <div><span>Reflections</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div><img src="images/icon-20.png" alt="" /></div>
+                                <div><span>Mixer</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div><img src="images/icon-21.png" alt="" /></div>
+                                <div><span>Swap</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div><img src="images/icon-22.png" alt="" /></div>
+                                <div><span>Farming</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="right">
+            <header>
+                <div class="wrapper">
+                    <div>
+                        <div id="balance">
+                            <div><img src="images/icon-23.png" alt="" /></div>
+                            <div>
+                                <p>BALANCE</p>
+                                <h4>0.00 BFI</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="profile-dropdown">
+                            <button>0x...2uQ7</button>
+                            <div>
+                                <ul>
+                                    <li><a href="javascript:void(0)">My Profile</a></li>
+                                    <li><a href="javascript:void(0)">Recent Transactions</a></li>
+                                </ul>
+                                <hr />
+                                <a class="disconnect" href="javascript:void(0)">
+                                    <div><span>Disconnect</span></div>
+                                    <div><img src="images/icon-25.png" alt="" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="end">
+                <div>
+                    <div><img src="images/img-14.png" alt="" /></div>
+                    <h2>Coming Soon</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, nisi nec sagittis suscipit, massa urna ullamcorper quam, quis malesuada nibh ante.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        /* Toggle Profile Dropdown */
+        document.querySelectorAll("#profile-dropdown > button").forEach(function(e, i){
+            e.addEventListener('click', function(){
+                document.querySelectorAll("#profile-dropdown > button").forEach((e) => {
+                    if (e === this) {
+                        e.classList.toggle("show");
+                    }
+                });
+            });
+	    });
+
+        window.onclick = function(event) {
+            if (!event.target.closest('#profile-dropdown > button')) {
+                document.querySelector("#profile-dropdown > button").classList.remove('show');
+            }
+	    }
+    </script>
+</body>
+</html>

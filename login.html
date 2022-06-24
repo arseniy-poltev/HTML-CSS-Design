@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login - BinarFi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/desktop.css" rel="stylesheet">
+	<link href="css/mobile.css" rel="stylesheet">
+    <script src="js/ethers.umd.min.js"></script>
+</head>
+<body id="login-page">
+    <!-- Provider Error -->
+    <div id="provider-error">
+        <img class="close" src="images/cross.svg" alt="">
+        <div><img src="images/icon-15.svg" alt="" /></div>
+        <div><h4>Provider Error</h4><p>No provider was found</p></div>
+    </div>
+    <header id="header">
+        <div class="wrapper"><a href="javascript:void(0)"><img id="logo" src="images/logo.png" alt="" /></a></div>
+    </header>
+    <main>
+        <div class="left"></div>
+        <div class="right">
+            <div>
+                <h2>Login to Begin</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, nisi nec sagittis suscipit, massa urna ullamcorper quam, quis malesuada nibh ante.</p>
+                <div id="login-container">
+                    <a id="connect-wallet" href="javascript:void(0)">
+                        <div><img src="images/img-13.png" alt="" /></div>
+                        <div>
+                            <h4>Connect Wallet</h4>
+                            <p>Use the wallet holding $BFI</p>
+                        </div>
+                    </a>
+                    <div id="login-divider">
+                        <hr />
+                        <span>or</span>
+                    </div>
+                    <form>
+                        <div class="row"><input type="email" class="x" name="" placeholder="Email" /></div>
+                        <div class="row"><input type="password" class="x" name="" placeholder="Password" /></div>
+                        <div><input type="submit" value="Login"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script> -->
+
+<script src="js/wallet.js"></script>
+</html>
